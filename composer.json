@@ -9,7 +9,10 @@
             "email": "ronan@thelittledot.com"
         }
     ],
-    "require": {},
+    "require": {
+        "ronanchilvers/container": "dev-master",
+        "slim/slim": "^3.9"
+    },
     "autoload": {
         "psr-4": {
             "Ronanchilvers\\Container\\Slim\\": "src"
