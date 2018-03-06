@@ -13,9 +13,17 @@
         "ronanchilvers/container": "dev-master",
         "slim/slim": "^3.9"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    },
     "autoload": {
         "psr-4": {
             "Ronanchilvers\\Container\\Slim\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ronanchilvers\\Container\\Slim\\Test\\": "tests"
         }
     }
 }
