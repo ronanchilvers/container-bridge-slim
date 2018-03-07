@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "ronanchilvers/container": "dev-master",
+        "ronanchilvers/container": "^1.0",
         "slim/slim": "^3.9"
     },
     "require-dev": {
