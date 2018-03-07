@@ -3,7 +3,7 @@
 namespace Ronanchilvers\Container\Slim;
 
 use Ronanchilvers\Container\Container as BaseContainer;
-use Ronanchilvers\Container\Slim\CallableResolver;
+use Slim\CallableResolver;
 use Slim\DefaultServicesProvider;
 use Slim\Handlers\Error;
 use Slim\Handlers\NotAllowed;
