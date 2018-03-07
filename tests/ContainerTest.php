@@ -98,18 +98,4 @@ class ContainerTest extends TestCase
 
         $this->assertInstanceOf($class, $container->get($key));
     }
-
-    /**
-     * Test CallableResolver works with a simple callable
-     *
-     * @test
-     * @author Ronan Chilvers <ronan@d3r.com>
-     */
-    // public function testCallableResolver()
-    // {
-    //     $container = new Container;
-    //     $resolver = new CallableResolver($container);
-
-    //     var_dump($resolver->resolve(function () {})); exit();
-    // }
 }
