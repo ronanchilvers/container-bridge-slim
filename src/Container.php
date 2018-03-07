@@ -133,7 +133,7 @@ class Container extends BaseContainer
 
         if (!$this->has('callableResolver')) {
             $this->share('callableResolver', function ($container) {
-                return new CallableResolver($this);
+                return new CallableResolver($container);
             });
         }
     }
