@@ -3,7 +3,7 @@
 namespace Ronanchilvers\Container\Slim;
 
 use Ronanchilvers\Container\Container as BaseContainer;
-use Ronanchilvers\Container\Slim\CallableResolver;
+use Slim\CallableResolver;
 use Slim\DefaultServicesProvider;
 use Slim\Handlers\Error;
 use Slim\Handlers\NotAllowed;
@@ -43,12 +43,13 @@ class Container extends BaseContainer
      */
     public function __construct(array $items = [])
     {
-        if (isset($items['settings'])) {
-            $items['settings'] = array_merge(
-                $this->defaultSettings,
-                $items['settings']
-            );
+        if (!isset($items['settings'])) {
+            $items['settings'] = [];
         }
+        $items['settings'] = array_merge(
+            $this->defaultSettings,
+            $items['settings']
+        );
         parent::__construct($items);
         $this->registerSlimServices();
     }
