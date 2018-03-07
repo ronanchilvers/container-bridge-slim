@@ -3,8 +3,8 @@
 namespace Ronanchilvers\Container\Slim\Test;
 
 use PHPUnit\Framework\TestCase;
-use Ronanchilvers\Container\Slim\CallableResolver;
 use Ronanchilvers\Container\Slim\Container;
+use Slim\CallableResolver;
 use Slim\Handlers\Error;
 use Slim\Handlers\NotAllowed;
 use Slim\Handlers\NotFound;
