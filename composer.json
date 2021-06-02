@@ -14,7 +14,8 @@
         "ronanchilvers/container": "^1.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.0"
+        "php-parallel-lint/php-parallel-lint": "^1.3",
+        "phpunit/phpunit": "^9.0"
     },
     "autoload": {
         "psr-4": {
